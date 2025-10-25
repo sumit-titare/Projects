@@ -1,0 +1,13 @@
+mutation createUser ($newUser: UserInput!) {
+  signupUser(newUser: $newUser) {
+    _id
+  	firstName
+    lastName
+  }
+}
+
+mutation signInUser ($user:SigninInput!) {
+  signinUser(signInUser: $user) {
+    token
+  }
+}
