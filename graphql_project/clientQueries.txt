@@ -1,0 +1,20 @@
+query getAllUsers {
+  users {
+    id
+    email
+    firstName
+    lastName
+    quotes {
+      content
+    }
+  }
+}
+
+
+
+query getAllQUotes {
+  quotes {
+    content
+    by
+  }
+}
